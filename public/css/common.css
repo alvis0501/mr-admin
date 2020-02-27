@@ -1,0 +1,14 @@
+.label-no-line-break {
+    display: inline-block;
+    width: 250px
+}
+
+.main-input {
+    display: inline-block;
+    width: 60%
+}
+
+textarea.form-control {
+    height: 100px;!important;
+}
+

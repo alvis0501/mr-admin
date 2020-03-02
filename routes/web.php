@@ -32,7 +32,20 @@ Route::get('/login', function (){
     return view('login');
 });
 
+Route::get('/register', function (){
+    return view('register');
+});
 
+Route::get('/error', function() {
+   return view('error');
+});
+
+Route::get('/logout',                                        'UserController@logout');
+Route::get('/index',                                         'DataController@index');
+Route::post('/get-data',                                     'DataController@getData');
+Route::post('/signin',                                       'UserController@login');
+Route::post('/signup',                                       'UserController@register');
+Route::post('/set-data',                                     'DataController@setData');
 
 
 
